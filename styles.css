@@ -1,0 +1,326 @@
+* {
+margin: 0;
+}
+:root {
+    --main-bg:rgb(28,28,28);
+    --nav-bar: linear-gradient(180deg, rgba(28,28,28,1) 89%, rgba(50,50,50,1) 97%, rgba(71,71,71,0.7903536414565826) 100%);
+    --hero: radial-gradient(circle, rgba(39,39,39,0) 1%, rgba(25,24,24,0) 25%, rgba(19,19,19,1) 64%, rgba(24,24,24,1) 79%, rgba(39,39,39,0) 88%);
+    --header-text: rgb(187, 187, 187);
+    --sections:rgb(28,28,28);
+    --footer: brown;
+    --font:white;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden; 
+    background-color: var(--main-bg);
+}
+main {
+    width: 100%;
+    background-color: var(--main-bg);
+    }
+
+header{
+    background-color: var(--main-bg);
+    border-bottom: 2px solid white;
+    resize: both;
+    height: 100vh;
+    width: 100%;
+    justify-self: center;
+}
+.header-name{
+    display: flex;
+    color: var(--header-text);
+    font-family: "Baloo Paaji 2", sans-serif; 
+    font-weight: 600;
+    font-size: 1rem; 
+    height:100%;
+    width:100%;
+    transform: translate(0, -90%);
+    margin: 0 5% 0 5%;
+}
+.h1 {
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    margin-top: 20px;
+}
+.header-text{
+    color: var(--header-text);
+    font-family: "Baloo Paaji 2", sans-serif; 
+    font-weight: 600;
+    font-size: 2rem;
+    height:100%;
+    width:70%;
+    transform: translate(0, -165%);
+    margin: 0 5% 0 5%;
+}
+@media (max-width: 1000px) {
+    .header-text{
+        transform: translate(0, -170%);
+        width: 90%;
+        margin: 0;
+        justify-self: center;
+    }
+    .header-name{
+        justify-content: center;
+        margin: 0;
+    }
+    #CSS-path {
+        transform: translate(-20px, 0);
+    }
+}
+@media (max-width: 700px) {
+    .header-text {
+        transform: translate(0, -180%);
+        font-size: 25px;
+    }
+}
+@media (max-width: 1124px) {
+    .function-label {
+        display: none
+    }
+}
+@media (min-width: 1124px) {
+    .function-label {
+        display: flex
+    }
+}
+@media (max-width: 890px) {
+    .services-text > h1 {
+        width: 70%;
+    }
+}
+@media (max-width: 820px) {
+    .header-name > h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-name {
+        transform: translate(0, -95%);
+        font-size: 1.3rem;
+    }
+    .CSS-logo{
+        width: 15%;
+        height: 15%;
+    }
+    
+    .HTML-logo{
+        width: 15%;
+        height: 15%;  
+    }
+    .GSAP-logo{
+        width: 15%;
+        height: 15%;
+    }
+    .JS-logo{
+        width: 15%;
+        height: 15%;
+    }
+    .services-text{
+        transform: translate(0, -70px);
+    }
+@media (max-width: 450px) {
+    div#about.section{
+        flex-direction: column;
+        height: 170vh;
+        width: 100%;
+    }
+    .about-text{
+        min-width: 90%;
+    }
+    .headshot-container {
+        min-width: 100%;
+    }
+    .headshot {
+        min-width: 90%;
+    }
+}
+}
+span.span{
+    display:none;
+}
+.cursor3 {
+    display: none;
+}
+.cursor2{
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+}
+.CSS-logo{
+    max-width: 10%;
+    max-height: 10%;
+}
+.HTML-logo{
+    max-width: 10%;
+    max-height: 10%;  
+}
+.GSAP-logo{
+    max-width: 10%;
+    max-height: 10%;
+}
+.JS-logo{
+    max-width: 10%;
+    max-height: 10%;
+}
+.main-section {
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background:var(--main-bg);
+    justify-content: center;
+}
+.section {
+    align-self: center;
+    z-index: 2;
+
+}
+div#about.section {
+    background: var(--sections);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px 0;
+}
+.headshot-container {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: var(--font);
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+div#services {
+    background: var(--sections);
+    display: grid;
+    width: 100vw;
+}
+#path {
+    stroke-width: 2;
+    stroke: gray;
+    z-index: -1;
+  }
+.services-text {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: var(--font);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.service-text {
+    display: flex;
+    flex-wrap: nowrap;
+}
+div#hobbies {
+    background: var(--sections);
+    height: 0;
+}
+.contact-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 10%;
+}
+.contact {
+    height: 100%;
+    width: 80%;
+    display:flex; 
+    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    font-family: "Baloo Paaji 2", sans-serif;
+    background-color: rgb(49, 49, 49);
+    border-radius: 25px;
+    color: var(--font)
+}
+.function-label {
+    justify-content: center;
+}
+.function {
+    display: flex;
+    flex-direction: column;
+}
+.contact-label {
+    margin-left: 15%;
+    height: auto;
+}
+.input-field {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+}
+.input-fields {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.inputs {
+    height: 50%;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    width: 30vw;
+    font: 0.5em "Baloo Paaji 2", sans-serif;
+    color: var(--font);
+}
+.contact-btn {
+    display: inline-flex;
+    width: 25vw;
+    height: auto;
+    font: 1.5rem "Baloo Paaji 2", sans-serif;
+    background-color: rgb(48, 48, 48);
+    color: var(--font);
+    border-radius: 15px;
+}
+.contact-btn:hover {
+    background-color: rgb(66, 66, 66);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(70, 69, 69);
+}
+.socials-container {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly       ;
+    height: 85%;
+    width: 65%
+}
+.icons {
+    color:rgb(27, 27, 27);
+}
+.copyright{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+}
